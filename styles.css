@@ -4,3 +4,24 @@
 @media(max-width:1120px){.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cols-2,.finance-split,.calendar-wrap{grid-template-columns:1fr}}
 @media(max-width:760px){.sidebar{display:none}.main-wrap{margin:0;width:100%}.topbar{height:74px;padding:12px 17px;gap:8px}.topbar-left{display:none}.mobile-brand{display:flex!important;align-items:center;gap:8px;font-size:17px}.mobile-brand .brand-mark{height:30px;width:30px;border-radius:9px;font-size:20px}.topbar-right{gap:9px}.topbar .btn-primary{padding:9px 11px}.today-date{display:none}.mobile-only{display:inline-flex!important}.page{padding:24px 15px calc(110px + env(safe-area-inset-bottom))}.welcome{margin-bottom:19px}.welcome h2{font-size:22px}.stats-grid{gap:10px}.stat{padding:15px}.stat .value{font-size:21px}.stat .stat-icon{width:32px;height:32px;margin-bottom:12px;font-size:17px}.card{border-radius:14px}.card-pad{padding:17px}.bottom-nav{position:fixed;z-index:9;inset:auto 0 0;display:grid;grid-template-columns:repeat(5,1fr);background:white;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -5px 20px #273e6812}.bottom-nav button{background:none;border:0;padding:12px 4px 10px;display:flex;flex-direction:column;align-items:center;gap:4px;color:#8791a7;font-size:10px;font-weight:700;min-height:62px}.bottom-nav button span{font-size:20px}.bottom-nav button.active{color:var(--primary)}.idea-grid,.settings-grid{grid-template-columns:1fr}.strategy-grid{grid-template-columns:1fr}.milestones{grid-template-columns:1fr}.section-head{align-items:flex-start}.toolbar .field{max-width:none;flex:1 1 100%}.row-item{gap:9px}.item-actions .btn-small{padding:5px 7px}.dialog-overlay{padding:0;align-items:end}.dialog{border-radius:18px 18px 0 0;max-height:92dvh;width:100%}.dialog-head{padding:17px}.dialog-body{padding:19px 17px calc(23px + env(safe-area-inset-bottom))}.form-grid{grid-template-columns:1fr}.calendar-card{padding:10px}.cal-day{min-height:47px;padding:6px 2px}.toast-visible{right:12px;left:12px;bottom:calc(82px + env(safe-area-inset-bottom));max-width:none}}
 @media(max-width:375px){.stat .value{font-size:18px}.btn{font-size:11px}.topbar .btn-primary span{display:none}.card-pad{padding:14px}.row-item .item-actions{max-width:46%}.item-actions .pill{display:none}}
+
+/* ENAL OS 1.1 — at-a-glance focus, bill forecast, mobile usability */
+.focus-card{padding:18px 21px;margin:0 0 19px;border-color:#dce2ff;background:linear-gradient(135deg,#fff 65%,#f0f3ff)}
+.focus-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.focus-heading h3{margin:5px 0;font-size:18px;letter-spacing:-.35px}
+.focus-heading p{color:var(--muted);font-size:12px;line-height:1.5;margin:0}
+.focus-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.focus-items .row-item{border:1px solid var(--line);border-radius:12px;background:white;padding:12px;align-items:flex-start;min-width:0}
+.focus-items .item-actions{max-width:100%}
+.focus-items .item-sub{display:none}
+.focus-items .row-item .main-info{min-width:0}
+.upcoming-strip{margin-top:22px;padding:15px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fcfcff}
+.upcoming-strip strong{font-size:13px}
+.upcoming-strip p{margin:5px 0 0;font-size:12px;color:var(--muted)}
+.upcoming-end{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.week-finance{margin-top:17px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.week-finance>div{display:flex;flex-direction:column;gap:6px;padding:17px;background:white;border:1px solid var(--line);border-radius:13px}
+.week-finance strong{font-size:22px;overflow-wrap:anywhere}
+.week-finance>p{grid-column:1/-1;margin:0 0 0 2px}
+@media(max-width:1000px){.focus-items{grid-template-columns:1fr}.focus-items .item-sub{display:block}}
+@media(max-width:640px){.focus-card{padding:14px}.focus-heading h3{font-size:16px}.focus-heading p{font-size:11px}.upcoming-strip{align-items:flex-start;flex-direction:column}.week-finance strong{font-size:17px}.focus-items .item-actions .pill{display:none}}
