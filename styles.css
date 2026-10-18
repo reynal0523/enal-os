@@ -25,3 +25,28 @@
 .week-finance>p{grid-column:1/-1;margin:0 0 0 2px}
 @media(max-width:1000px){.focus-items{grid-template-columns:1fr}.focus-items .item-sub{display:block}}
 @media(max-width:640px){.focus-card{padding:14px}.focus-heading h3{font-size:16px}.focus-heading p{font-size:11px}.upcoming-strip{align-items:flex-start;flex-direction:column}.week-finance strong{font-size:17px}.focus-items .item-actions .pill{display:none}}
+
+/* ENAL OS V1.2 - Grab tracker (responsive, no dependencies) */
+.grab-panel{margin-top:18px}
+.grab-panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.grab-panel-head h3{margin:3px 0 4px;font-size:19px}
+.grab-panel-head p{margin:0}
+.grab-stats,.grab-coverage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:15px 0}
+.grab-stats>div,.grab-coverage>div{padding:15px;border:1px solid var(--line);border-radius:13px;background:var(--surface,#fff);min-width:0}
+.grab-stats strong,.grab-coverage strong{display:block;font-size:19px;margin-top:8px;overflow-wrap:anywhere}
+.grab-coverage{margin-top:18px}
+.grab-coverage strong{font-size:16px}
+.grab-panel .eyebrow{font-size:10px;letter-spacing:.045em;line-height:1.3}
+.grab-target{border:1px solid var(--line);padding:14px;border-radius:12px;background:#fafbff}
+.grab-target .meter{margin:9px 0}
+.grab-target p{margin:7px 0 0}
+.grab-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.grab-buttons .btn{min-height:39px}
+.grab-help{margin:9px 0 10px;line-height:1.5}
+.grab-history{border-top:1px solid var(--line);padding-top:12px;margin-top:14px}
+.grab-history summary{cursor:pointer;font-size:13px;font-weight:650;padding:8px 0}
+.grab-table-wrap{overflow-x:auto}
+.grab-table-wrap table{width:100%;border-collapse:collapse;min-width:410px;text-align:right;font-size:12px}
+.grab-table-wrap th,.grab-table-wrap td{padding:10px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+.grab-table-wrap th:first-child,.grab-table-wrap td:first-child{text-align:left}
+@media(max-width:700px){.grab-stats{grid-template-columns:1fr 1fr}.grab-stats>div:last-child{grid-column:1/-1}.grab-coverage{grid-template-columns:1fr}.grab-stats strong{font-size:16px}.grab-coverage strong{font-size:17px}.grab-panel-head h3{font-size:17px}.grab-buttons{display:grid;grid-template-columns:1fr 1fr}.grab-buttons button:first-child{grid-column:1/-1}}
