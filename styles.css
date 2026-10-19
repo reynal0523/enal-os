@@ -79,3 +79,16 @@
 .savings-movement{display:flex;justify-content:space-between;gap:8px;font-size:12px;border-bottom:1px solid var(--line);padding:9px 0}
 .savings-movement strong{white-space:nowrap}
 @media(max-width:720px){.savings-grid{grid-template-columns:1fr}.savings-goal{padding:15px}}
+\n/* ENAL OS V1.5 - financial insights */
+.insight-toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 9px}
+.insight-stats{margin-top:17px}
+.insight-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:18px}
+.insight-split .card{min-width:0}
+.insight-group{margin:13px 0}
+.insight-group .flex-between{gap:10px;align-items:center;flex-wrap:wrap}
+.insight-track{height:7px;border-radius:99px;background:#ebeff7;overflow:hidden;margin-top:8px}
+.insight-track div{height:100%;background:#5d6cea;border-radius:99px}
+.insight-summary{margin-top:18px}
+.insight-summary h3{margin:0 0 11px}
+.insight-summary p{font-size:13px;line-height:1.6}
+@media(max-width:720px){.insight-split{grid-template-columns:1fr}}
