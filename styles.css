@@ -92,3 +92,8 @@
 .insight-summary h3{margin:0 0 11px}
 .insight-summary p{font-size:13px;line-height:1.6}
 @media(max-width:720px){.insight-split{grid-template-columns:1fr}}
+
+/* ENAL OS V1.6 — local backup health and recovery */
+.backup-health{border-color:#cedcf0}
+.backup-health p{line-height:1.6}
+.backup-health button{margin-top:5px}
