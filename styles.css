@@ -66,3 +66,16 @@
 .budget-details summary{cursor:pointer;font-size:13px;font-weight:700;padding:6px 0}
 @media(max-width:800px){.budget-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.budget-metrics strong{font-size:15px}.budget-head h3{font-size:17px}.budget-metrics>div{padding:11px}.budget-metrics .eyebrow{font-size:9px}}
+
+/* ENAL OS V1.4 Savings */
+.savings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:18px 0}
+.savings-goal{padding:18px;min-width:0}
+.savings-goal h3{margin:9px 0 4px;overflow-wrap:anywhere}
+.savings-goal>.flex-between{gap:9px;align-items:flex-start}
+.savings-goal .meter{height:8px}
+.savings-buttons{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}
+.savings-goal details{border-top:1px solid var(--line);padding-top:10px}
+.savings-goal summary{cursor:pointer}
+.savings-movement{display:flex;justify-content:space-between;gap:8px;font-size:12px;border-bottom:1px solid var(--line);padding:9px 0}
+.savings-movement strong{white-space:nowrap}
+@media(max-width:720px){.savings-grid{grid-template-columns:1fr}.savings-goal{padding:15px}}
