@@ -124,3 +124,17 @@
 .save-review-card p{line-height:1.5}
 #save-review[data-due="yes"]{font-weight:700;color:#986020}
 @media(max-width:700px){.save-status{font-size:10px;max-width:140px;padding:5px 7px}.topbar-right{gap:6px}}
+
+/* ENAL OS V1.9 — mobile bottom navigation and quick capture */
+.mobile-capture{display:none}
+.mobile-nav-item .nav-icon{line-height:1;display:block}
+@media(max-width:760px){
+ .bottom-nav button{min-height:58px;padding:10px 4px 8px;touch-action:manipulation}
+ .bottom-nav button span:last-child{font-size:10px}
+ .mobile-capture{display:flex;align-items:center;justify-content:center;gap:7px;position:fixed;right:15px;bottom:calc(77px + env(safe-area-inset-bottom));z-index:8;background:var(--primary);color:white;border:1px solid #2537a9;box-shadow:0 7px 21px rgba(43,59,151,.3);border-radius:100px;padding:13px 17px;font-size:13px;font-weight:780;min-height:48px;touch-action:manipulation}
+ .mobile-capture:focus-visible,.bottom-nav button:focus-visible{outline:3px solid #92a6ff;outline-offset:2px}
+ .page{padding-bottom:calc(156px + env(safe-area-inset-bottom))}
+ .toast-visible{bottom:calc(139px + env(safe-area-inset-bottom))}
+ .mobile-quick-grid .btn{min-height:52px;font-size:13px}
+}
+@media(max-width:350px){.mobile-capture span{display:none}.mobile-capture{width:50px;padding:0;font-size:23px}}
