@@ -50,3 +50,19 @@
 .grab-table-wrap th,.grab-table-wrap td{padding:10px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
 .grab-table-wrap th:first-child,.grab-table-wrap td:first-child{text-align:left}
 @media(max-width:700px){.grab-stats{grid-template-columns:1fr 1fr}.grab-stats>div:last-child{grid-column:1/-1}.grab-coverage{grid-template-columns:1fr}.grab-stats strong{font-size:16px}.grab-coverage strong{font-size:17px}.grab-panel-head h3{font-size:17px}.grab-buttons{display:grid;grid-template-columns:1fr 1fr}.grab-buttons button:first-child{grid-column:1/-1}}
+
+/* ENAL OS V1.3 — Smart 30-day bill planner */
+.budget-plan{margin-top:18px}
+.budget-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.budget-head h3{font-size:19px;margin:4px 0 5px}
+.budget-head p{margin:0}
+.budget-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}
+.budget-metrics>div{background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px;min-width:0}
+.budget-metrics strong{display:block;overflow-wrap:anywhere;font-size:18px;margin:8px 0 5px}
+.budget-metrics .eyebrow{font-size:10px;line-height:1.4;letter-spacing:.02em}
+.budget-metrics .small{font-size:11px}
+.budget-disclaimer{line-height:1.6;background:#f7f9fc;border-radius:10px;padding:11px 14px}
+.budget-details{margin-top:12px;border-top:1px solid var(--line);padding-top:12px}
+.budget-details summary{cursor:pointer;font-size:13px;font-weight:700;padding:6px 0}
+@media(max-width:800px){.budget-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.budget-metrics strong{font-size:15px}.budget-head h3{font-size:17px}.budget-metrics>div{padding:11px}.budget-metrics .eyebrow{font-size:9px}}
