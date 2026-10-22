@@ -210,3 +210,19 @@
 .daily-review-prior{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:8px}
 .daily-review-prior p{margin:0;min-width:0;overflow-wrap:anywhere}
 @media(max-width:480px){.daily-review-prior{align-items:flex-start;flex-direction:column}.daily-review-prior .btn{width:100%}}
+
+/* ENAL OS V2.5 - Daily Review History */
+.review-history{margin:0 0 18px}
+.review-history .card-head{align-items:flex-start}
+.review-history .card-head h3{margin:4px 0}
+.review-history .card-head p{margin:4px 0 0}
+.review-history-list{display:grid;gap:12px}
+.review-history-item{border:1px solid var(--line);border-radius:12px;padding:13px;min-width:0}
+.review-history-date{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.review-history-date strong{font-size:13px}
+.review-history-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.review-history-details>div{min-width:0}
+.review-history-details p{font-size:13px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;margin:5px 0 0}
+.review-history-action{display:flex;justify-content:flex-end;margin-top:10px}
+.review-history-note{margin:12px 0 0}
+@media(max-width:600px){.review-history-details{grid-template-columns:1fr;gap:10px}.review-history-item{padding:11px}.review-history-action .btn{width:100%}}
