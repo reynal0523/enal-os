@@ -226,3 +226,17 @@
 .review-history-action{display:flex;justify-content:flex-end;margin-top:10px}
 .review-history-note{margin:12px 0 0}
 @media(max-width:600px){.review-history-details{grid-template-columns:1fr;gap:10px}.review-history-item{padding:11px}.review-history-action .btn{width:100%}}
+
+/* ENAL OS V2.6 - Weekly Reflection Insights */
+.reflection-insights{margin:0 0 18px}
+.reflection-insights .card-head{align-items:flex-start}
+.reflection-insights .card-head h3{margin:4px 0}
+.reflection-insights .card-head p{margin:4px 0 0}
+.reflection-insight-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.reflection-insight-metrics>div{display:flex;flex-direction:column;gap:5px;border:1px solid var(--line);border-radius:10px;padding:12px;min-width:0}
+.reflection-insight-metrics strong{font-size:22px;line-height:1.2}
+.reflection-insight-metrics span{font-size:12px;color:var(--muted)}
+.reflection-insight-note{padding:13px;border-radius:10px;background:var(--surface-2,var(--surface));border:1px solid var(--line)}
+.reflection-insight-note p{margin:7px 0 0;line-height:1.55;overflow-wrap:anywhere}
+.reflection-insights>p:last-child{margin:12px 0 0}
+@media(max-width:480px){.reflection-insight-metrics{gap:7px}.reflection-insight-metrics>div{padding:9px}.reflection-insight-metrics strong{font-size:19px}.reflection-insight-metrics span{font-size:11px}}
