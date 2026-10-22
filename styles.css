@@ -206,3 +206,7 @@
 .daily-review-grid p{font-size:13px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;margin:7px 0 0}
 .daily-review-note{margin:12px 0 0}
 @media(max-width:720px){.daily-review-grid{grid-template-columns:1fr}.daily-review-grid>div{padding:10px}}
+/* ENAL OS V2.4 â€” reflection to action */
+.daily-review-prior{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:8px}
+.daily-review-prior p{margin:0;min-width:0;overflow-wrap:anywhere}
+@media(max-width:480px){.daily-review-prior{align-items:flex-start;flex-direction:column}.daily-review-prior .btn{width:100%}}
