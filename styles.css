@@ -177,3 +177,21 @@
 .weekly-table-wrap td,.weekly-table-wrap th{padding:10px 7px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
 .weekly-table-wrap td:first-child,.weekly-table-wrap th:first-child{text-align:left}
 @media(max-width:760px){.weekly-columns{grid-template-columns:1fr}}
+
+/* ENAL OS V2.2 â€” Daily Scorecard */
+.daily-scorecard{margin:0 0 18px;border-color:#dce2f8}
+.scorecard-head h3{font-size:18px;margin:4px 0 5px}
+.scorecard-head p{margin:0}
+.score-lanes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.score-lane{border:1px solid var(--line);border-radius:12px;padding:12px;min-width:0}
+.score-lane-head,.score-lane-foot{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.score-lane-head{font-size:12px;font-weight:650}
+.score-lane-head strong{font-size:15px;overflow-wrap:anywhere;text-align:right}
+.score-track{height:8px;background:#edf0f8;border-radius:99px;overflow:hidden;margin:12px 0 9px}
+.score-track div{height:100%;background:#586bd2;border-radius:99px;transition:width .2s ease}
+.score-lane-foot{align-items:flex-start;flex-wrap:wrap;font-size:11px;color:var(--muted);line-height:1.45}
+.score-lane-foot button{font-size:11px}
+.scorecard-next{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:#f6f8ff;border-radius:11px;padding:12px 14px;margin-top:12px}
+.scorecard-next .eyebrow{font-size:10px}
+.scorecard-next strong{font-size:13px}
+@media(max-width:720px){.score-lanes{grid-template-columns:1fr}.score-lane{padding:11px}.score-track{margin:9px 0}}
