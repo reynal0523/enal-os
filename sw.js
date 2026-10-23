@@ -1,4 +1,4 @@
-const CACHE='enal-os-app-shell-v2.9-20261023';
+const CACHE='enal-os-app-shell-v2.10-20261024';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('enal-os-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
