@@ -259,3 +259,23 @@
 .motivation-caption .btn{justify-self:start}
 @media(max-width:760px){.motivation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.journal-entry{padding:14px}}
 @media(max-width:430px){.motivation-grid{grid-template-columns:1fr}.motivation-card>img{aspect-ratio:16/10}.journal-entry-head .item-actions{width:100%}.journal-entry-head .item-actions .btn{flex:1}}
+
+/* ENAL OS V2.8 - Focus Mode */
+.focus-mode-intro{padding:8px 0 18px}
+.focus-mode-intro h2{font-size:clamp(25px,4vw,34px);margin:8px 0}
+.focus-mode-intro p{color:var(--muted);max-width:580px;line-height:1.6}
+.focus-main-priority{padding:clamp(20px,4vw,32px);margin-bottom:16px;border:1px solid var(--accent,#5264d8);background:var(--surface)}
+.focus-main-priority h3{font-size:clamp(23px,4vw,32px);margin:13px 0 8px;overflow-wrap:anywhere}
+.focus-main-priority>p{line-height:1.65;color:var(--muted);white-space:pre-wrap}
+.focus-priority-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.focus-today-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0 25px}
+.focus-today-summary>div{display:grid;gap:5px;padding:15px;border:1px solid var(--line);border-radius:13px;background:var(--surface)}
+.focus-today-summary strong{font-size:clamp(20px,3vw,28px)}
+.focus-today-summary span{font-size:12px;color:var(--muted)}
+.focus-task-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 16px;border-bottom:1px solid var(--line)}
+.focus-task-row:last-child{border-bottom:0}
+.focus-task-title{display:grid;gap:5px;min-width:0;overflow-wrap:anywhere}
+.focus-task-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.focus-reminder{padding:18px;margin:18px 0}
+.focus-reminder p{line-height:1.65;color:var(--muted);margin-bottom:0}
+@media(max-width:480px){.focus-today-summary{gap:7px}.focus-today-summary>div{padding:11px 9px}.focus-today-summary span{font-size:11px}.focus-task-row{align-items:flex-start;padding:13px 10px}.focus-task-actions{gap:7px}.focus-task-actions .btn{padding:7px 9px;font-size:12px}}
