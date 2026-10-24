@@ -489,7 +489,7 @@ function backupStatusPanel(){
 }
 function downloadBackup(){
  if(storageIssue)return downloadDamaged();
- const payload={...data,exportedAt:new Date().toISOString(),release:"2.10",recordCounts:snapshotCounts(data)};
+ const payload={...data,exportedAt:new Date().toISOString(),release:"2.11",recordCounts:snapshotCounts(data)};
  downloadText("ENAL-OS-backup-"+localDate()+".json",JSON.stringify(payload,null,2),"application/json;charset=utf-8");recordSaveMeta('lastBackupRequestedAt');renderSaveStatus();
  notify("JSON backup download requested. Confirm the file was saved securely.");
 }
