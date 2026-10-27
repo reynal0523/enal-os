@@ -20,6 +20,11 @@
 .upcoming-strip p{margin:5px 0 0;font-size:12px;color:var(--muted)}
 .upcoming-end{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .week-finance{margin-top:17px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.week-compare{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:13px}
+.week-compare>div{display:flex;flex-direction:column;gap:6px;padding:13px;background:var(--surface);border:1px solid var(--line);border-radius:12px;min-width:0}
+.week-compare strong{font-size:17px;overflow-wrap:anywhere}
+.week-compare .small{font-size:11px;line-height:1.4}
+@media(max-width:640px){.week-compare{grid-template-columns:1fr}.week-compare>div{padding:12px}.week-compare strong{font-size:18px}}
 .week-finance>div{display:flex;flex-direction:column;gap:6px;padding:17px;background:white;border:1px solid var(--line);border-radius:13px}
 .week-finance strong{font-size:22px;overflow-wrap:anywhere}
 .week-finance>p{grid-column:1/-1;margin:0 0 0 2px}
